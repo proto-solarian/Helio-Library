@@ -1,5 +1,5 @@
 # Helio-Library
-A zero† dependency cross-project header library for practice, reference, and preference.
+A zero-dependency† cross-project header library for practice, reference, and preference.
 
 Contains data structures, math implementations, and preferred typename definitions.
 
