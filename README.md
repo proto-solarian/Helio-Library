@@ -1,5 +1,6 @@
 # Helio-Library
-A cross-project header library for practice, reference, and preference.
+A zero* dependency cross-project header library for practice, reference, and preference.
+* There are/may-always-be some standard math library references, like sin, cos, etc.
 
 Contains data structures, math implementations, and preferred typename definitions.
 
@@ -11,3 +12,4 @@ Some of the code here is also for showcase and reference. What can I do, what di
 ## TODO
 - Tests should be out of source, especially so that some library header doesn't accidentally call them in.
 - Implement Matrices and Quaternions
+- Add that quick square root from Quake
