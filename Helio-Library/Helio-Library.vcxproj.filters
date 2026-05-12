@@ -30,6 +30,12 @@
     <ClInclude Include="Float3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StdUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Float.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp">
@@ -38,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Float3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Float2.inl">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>

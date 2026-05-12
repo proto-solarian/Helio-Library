@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Float.h"
 #include "Float2.h"
 #include "Float3.h"
 
@@ -15,6 +16,5 @@ const N64 N64_MAX = 0xffffffffffffffffui64;
 using Z64 = long long int;
 const Z64 Z64_MAX = 9223372036854775807i64;
 const Z64 Z64_MIN = -9223372036854775808i64;
-
 
 struct Quaternion {};

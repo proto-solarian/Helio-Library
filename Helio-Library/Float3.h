@@ -1,7 +1,5 @@
 #pragma once
 
-#include <math.h>
-
 struct Float3
 {
 public:
@@ -24,6 +22,9 @@ public:
     constexpr Float3 operator-(const Float3& rhs) const;
     constexpr Float3 operator*(const float rhs) const;
     constexpr Float3 operator/(const float rhs) const;
+
+    constexpr bool operator==(const Float3& rhs) const;
+    constexpr bool operator!=(const Float3& rhs) const;
 
     constexpr float Dot(const Float3& other) const;
     constexpr Float3 Cross(const Float3& other) const;

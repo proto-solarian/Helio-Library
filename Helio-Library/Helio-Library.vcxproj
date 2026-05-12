@@ -125,16 +125,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Float.h" />
     <ClInclude Include="Helio.h" />
     <ClInclude Include="HMath.h" />
     <ClInclude Include="HTypes.h" />
     <ClInclude Include="Float2.h" />
     <ClInclude Include="Float3.h" />
+    <ClInclude Include="StdUtil.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Float2.inl" />
     <None Include="Float3.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,7 +5,7 @@
 */
 
 using Byte = char;
-using ByteString = const char*;
+using String = const char*;
 
 using Glyph = wchar_t;
 using Text = const wchar_t*;

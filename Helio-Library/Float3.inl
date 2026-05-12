@@ -1,5 +1,6 @@
 #pragma once
 
+#include "StdUtil.h"
 
 inline constexpr Float3::Float3()
     : x(0.0f), y(0.0f), z(0.0f)
@@ -91,6 +92,18 @@ inline constexpr Float3 Float3::operator/(const float scalar) const
     return this->operator*(1.0f / scalar);
 }
 
+inline constexpr bool Float3::operator==(const Float3& rhs) const
+{
+    return x == rhs.x &&
+        y == rhs.y &&
+        z == rhs.z;
+}
+
+inline constexpr bool Float3::operator!=(const Float3& rhs) const
+{
+    return !(*this == rhs);
+}
+
 inline constexpr float Float3::Dot(const Float3& other) const
 {
     return x * other.x + y * other.y + z * other.z;
@@ -107,11 +120,6 @@ inline constexpr Float3 Float3::Cross(const Float3& other) const
 inline constexpr float Float3::SqrMagnitude() const
 {
     return Dot(*this);
-}
-
-inline constexpr static float Call(float (*stdFunc)(float), float in)
-{
-    return stdFunc(in);
 }
 
 inline constexpr float Float3::Magnitude() const
