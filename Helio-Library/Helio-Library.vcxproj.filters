@@ -13,28 +13,46 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{f4323fd0-5ec8-4557-a643-74d1a5be6ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test">
+      <UniqueIdentifier>{da9bc276-064e-429e-bbe1-964a2d843a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math\Test">
+      <UniqueIdentifier>{c5086e56-0706-4c99-8fe6-e945510ffe29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HMath.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="HTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Float2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Float3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StdUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Float.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HMath.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Float2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Float3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MathToys.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Float3Test.h">
+      <Filter>Header Files\Math\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="TestUtils.h">
+      <Filter>Header Files\Test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +61,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Float3.inl">
-      <Filter>Header Files</Filter>
-    </None>
     <None Include="Float2.inl">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="Float3.inl">
+      <Filter>Header Files\Math</Filter>
     </None>
   </ItemGroup>
 </Project>

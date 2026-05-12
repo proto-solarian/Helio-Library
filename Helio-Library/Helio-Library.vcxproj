@@ -126,12 +126,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Float.h" />
+    <ClInclude Include="Float3Test.h" />
     <ClInclude Include="Helio.h" />
     <ClInclude Include="HMath.h" />
     <ClInclude Include="HTypes.h" />
     <ClInclude Include="Float2.h" />
     <ClInclude Include="Float3.h" />
+    <ClInclude Include="MathToys.h" />
     <ClInclude Include="StdUtil.h" />
+    <ClInclude Include="TestUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp" />
