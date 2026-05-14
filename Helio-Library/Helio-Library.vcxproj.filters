@@ -54,6 +54,9 @@
     <ClInclude Include="TestUtils.h">
       <Filter>Header Files\Test</Filter>
     </ClInclude>
+    <ClInclude Include="SphereCoords.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp">
