@@ -3,6 +3,7 @@
 #include "Float.h"
 #include "Float2.h"
 #include "Float3.h"
+#include "SphereCoords.h"
 
 /// <summary>
 /// ©‘R”-•„†–³‚µ (0 to N_MAX)

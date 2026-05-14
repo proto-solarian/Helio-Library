@@ -15,14 +15,14 @@ public:
     float phi;
     
     constexpr Float3 ToCartesianCoords();
-
-    inline constexpr Float3 ToCartesianCoords()
-    {
-        Float3 coords;
-        coords.y = Call(cosf, phi) * radius;
-        float xzLength = Call(sinf, phi);
-        coords.x = Call(cosf, theta) * xzLength;
-        coords.z = Call(sinf, theta) * xzLength;
-        return coords;
-    }
 };
+
+inline constexpr Float3 SphereCoords::ToCartesianCoords()
+{
+    Float3 coords;
+    coords.y = Call(cosf, phi) * radius;
+    float xzLength = Call(sinf, phi);
+    coords.x = Call(cosf, theta) * xzLength;
+    coords.z = Call(sinf, theta) * xzLength;
+    return coords;
+}
