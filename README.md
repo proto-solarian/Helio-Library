@@ -13,10 +13,10 @@ Some of the code here is also for showcase and reference. What can I do, what di
 - Implement Float4 -> Make Float* declarations generic? Make Enable various levels of precision?
 - Implement Matrices and Quaternions
 - Add that quick square root from Quake
-- Add Spheremap conversion functions (from-to look dir).
 - Add Cubemap functions
 - Add Data Structures
 - Add Computational Geometry Utils: triangle logic, barycentric coords (rasterization, point-in-tri)
-- Add Tests for Spherecoords implementation.
+- Tests for Spheremap conversion functions (from-to look dir).
+- Tests for Spherecoords implementation.
 
 † There are/may-always-be some standard math library references, like sin, cos, etc.

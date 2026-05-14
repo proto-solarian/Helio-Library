@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClInclude Include="Float.h" />
     <ClInclude Include="Float3Test.h" />
+    <ClInclude Include="Geometric.h" />
     <ClInclude Include="Helio.h" />
     <ClInclude Include="HMath.h" />
     <ClInclude Include="HTypes.h" />

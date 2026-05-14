@@ -18,4 +18,6 @@ using Z64 = long long int;
 const Z64 Z64_MAX = 9223372036854775807i64;
 const Z64 Z64_MIN = -9223372036854775808i64;
 
+const float PI = 3.1415926535f;
+
 struct Quaternion {};
