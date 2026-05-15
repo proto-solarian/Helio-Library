@@ -76,6 +76,18 @@ inline constexpr Float2 Float2::operator/(const float scalar) const
     return (*this) * (1.0f / scalar);
 }
 
+inline constexpr bool Float2::operator==(const Float2& rhs) const
+{
+    return
+        IsApproximatelyEqual(x, rhs.x) &&
+        IsApproximatelyEqual(y, rhs.y);
+}
+
+inline constexpr bool Float2::operator!=(const Float2& rhs) const
+{
+    return !(*this == rhs);
+}
+
 inline constexpr float Float2::Dot(const Float2& other) const
 {
     return x * other.x + y * other.y;

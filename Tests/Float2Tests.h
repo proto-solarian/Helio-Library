@@ -16,4 +16,15 @@ private:
     bool OperatorMinusTest();
     bool OperatorTimesTest();
     bool OperatorDivideTest();
+    bool OperatorEqualsTest();
+    bool OperatorNotEqualsTest();
+
+    bool DotTest();
+    bool SqrMagnitudeTest();
+    bool MagnitudeTest();
+    bool NormalizedTest();
+    bool NormalizeTest();
+    bool ProjectOnTargetTest();
+    bool ProjectOnNormalTest();
+    bool ReflectOnNormalTest();
 };

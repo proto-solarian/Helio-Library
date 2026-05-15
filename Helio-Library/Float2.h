@@ -21,6 +21,9 @@ public:
     constexpr Float2 operator*(const float rhs) const;
     constexpr Float2 operator/(const float rhs) const;
 
+    constexpr bool operator==(const Float2& rhs) const;
+    constexpr bool operator!=(const Float2& rhs) const;
+
     constexpr float Dot(const Float2& other) const;
     constexpr float SqrMagnitude() const;
     constexpr float Magnitude() const;

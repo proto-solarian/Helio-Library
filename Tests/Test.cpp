@@ -1,7 +1,7 @@
 #include "Helio.h"
 
 #include "Float2Tests.h"
-#include "Float3Test.h"
+#include "Float3Tests.h"
 #include "MathToys.h"
 
 int main()

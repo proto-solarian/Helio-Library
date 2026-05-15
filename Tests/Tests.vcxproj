@@ -138,7 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Float2Tests.h" />
-    <ClInclude Include="Float3Test.h" />
+    <ClInclude Include="Float3Tests.h" />
     <ClInclude Include="TestUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -26,7 +26,7 @@
     <ClInclude Include="TestUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Float3Test.h">
+    <ClInclude Include="Float3Tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Float2Tests.h">
