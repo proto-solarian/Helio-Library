@@ -134,9 +134,11 @@
     <ClInclude Include="Float2.h" />
     <ClInclude Include="Float3.h" />
     <ClInclude Include="MathToys.h" />
+    <ClInclude Include="Quaternion.h" />
     <ClInclude Include="SphereCoords.h" />
     <ClInclude Include="StdUtil.h" />
     <ClInclude Include="TestUtils.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp" />

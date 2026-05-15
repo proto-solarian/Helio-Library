@@ -10,18 +10,17 @@ public:
     constexpr Float3();
     constexpr Float3(float x, float y, float z);
     constexpr Float3(const Float3& o);
-    constexpr ~Float3();
 
-    constexpr Float3& operator=(const Float3& other);
-    constexpr Float3& operator+=(const Float3& other);
-    constexpr Float3& operator-=(const Float3& other);
-    constexpr Float3& operator*=(const float other);
-    constexpr Float3& operator/=(const float other);
+    constexpr Float3& operator=(const Float3& rhs);
+    constexpr Float3& operator+=(const Float3& rhs);
+    constexpr Float3& operator-=(const Float3& rhs);
+    constexpr Float3& operator*=(const float rhs);
+    constexpr Float3& operator/=(const float rhs);
 
     constexpr Float3 operator+(const Float3& rhs) const;
     constexpr Float3 operator-(const Float3& rhs) const;
-    constexpr Float3 operator*(const float rhs) const;
-    constexpr Float3 operator/(const float rhs) const;
+    constexpr Float3 operator*(const float scalar) const;
+    constexpr Float3 operator/(const float scalar) const;
 
     constexpr bool operator==(const Float3& rhs) const;
     constexpr bool operator!=(const Float3& rhs) const;

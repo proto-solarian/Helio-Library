@@ -14,9 +14,6 @@ inline constexpr Float3::Float3(const Float3& o)
     : x(o.x), y(o.y), z(o.z)
 {}
 
-inline constexpr Float3::~Float3()
-{}
-
 /*
     Arithmetic
 */
@@ -34,10 +31,6 @@ inline constexpr Float3& Float3::operator=(const Float3& rhs)
 
 inline constexpr Float3& Float3::operator+=(const Float3& rhs)
 {
-    if (&rhs == this) {
-        return *this;
-    }
-
     x += rhs.x;
     y += rhs.y;
     z += rhs.z;
@@ -46,10 +39,6 @@ inline constexpr Float3& Float3::operator+=(const Float3& rhs)
 
 inline constexpr Float3& Float3::operator-=(const Float3& rhs)
 {
-    if (&rhs == this) {
-        return *this;
-    }
-
     x -= rhs.x;
     y -= rhs.y;
     z -= rhs.z;

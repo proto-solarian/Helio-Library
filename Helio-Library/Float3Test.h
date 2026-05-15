@@ -12,7 +12,7 @@ void RunFloat3Test()
     Float3 n(0.0f, 1.0f, 0.0f);
     Float3 v(1.0f, 1.0f, 0.0f);
     float initMagnitude = v.Magnitude();
-    Assert(IsNearlyEqual(initMagnitude, sqrt2), "Magnitude calculation is incorrect.");
+    Assert(IsApproximatelyEqual(initMagnitude, sqrt2), "Magnitude calculation is incorrect.");
     v.Normalize();
     float postNormalizeMagnitude = v.Magnitude();
     // TODO: This assertion fails, because sqrtf(2.00000000f) from math.h gives back
@@ -20,11 +20,11 @@ void RunFloat3Test()
     //          ^                     ^
     // Review whether this is actually a problem.
     // At least `Epsilon` and `IsNearlyEqual` seem to be doing their job.
-    Assert(IsNearlyEqual(postNormalizeMagnitude, 1.0f), "Normalize() produced incorrect magnitude.");
-    Assert(IsNearlyEqual(v.x, v.y), "Normalize produced mismatched axes.");
-    Assert(IsNearlyEqual(v.x, sqrt2on2), "Normalize() produced incorrect axis length.");
+    Assert(IsApproximatelyEqual(postNormalizeMagnitude, 1.0f), "Normalize() produced incorrect magnitude.");
+    Assert(IsApproximatelyEqual(v.x, v.y), "Normalize produced mismatched axes.");
+    Assert(IsApproximatelyEqual(v.x, sqrt2on2), "Normalize() produced incorrect axis length.");
     float nDotV = n.Dot(v);
-    Assert(IsNearlyEqual(nDotV, sqrt2on2), "Dot product incorrect.");
+    Assert(IsApproximatelyEqual(nDotV, sqrt2on2), "Dot product incorrect.");
     Float3 proj = n * nDotV;
     Assert(proj == Float3(0.0f, sqrt2on2, 0.0f), "Incorrect manually projected vector.");
     Float3 projOnTgt = v.ProjectOnTarget(n);

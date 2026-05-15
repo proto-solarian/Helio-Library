@@ -11,11 +11,12 @@ Some of the code here is also for showcase and reference. What can I do, what di
 ## TODO
 - Tests should be out of source, especially so that some library header doesn't accidentally call them in.
 - Implement Float4 -> Make Float* declarations generic? Make Enable various levels of precision?
-- Implement Matrices and Quaternions
+- Implement Matrices
+- Tests for Quaternions
 - Add that quick square root from Quake
 - Add Cubemap functions
 - Add Data Structures
-- Add Computational Geometry Utils: triangle logic, barycentric coords (rasterization, point-in-tri)
+- Tests for Computational Geometry Utils: triangle logic, barycentric coords (rasterization, point-in-tri)
 - Tests for Spheremap conversion functions (from-to look dir).
 - Tests for Spherecoords implementation.
 
