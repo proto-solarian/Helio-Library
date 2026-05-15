@@ -4,12 +4,16 @@
 
 #include <iostream>
 
-bool badflag = false;
-
-void Assert(bool assertion, String failureMsg)
+inline constexpr bool Assert(bool assertion, String failureMsg)
 {
     if (!assertion) {
         std::cout << "Assertion failed: " << failureMsg << std::endl;
-        badflag = true;
     }
+    return assertion;
 }
+
+class UnitTests
+{
+public:
+    virtual bool Run() = 0;
+};

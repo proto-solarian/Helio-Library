@@ -15,7 +15,7 @@ const Z64 Z64_MIN = -9223372036854775808i64;
 
 const float PI = 3.1415926535f;
 
-const float EPSILON = 0.00000001f;
+const float EPSILON = 1.192092896e-07F;
 
 inline constexpr float AbsoluteValue(float a)
 {

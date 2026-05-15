@@ -9,7 +9,6 @@ public:
     constexpr Float2();
     constexpr Float2(float x, float y);
     constexpr Float2(const Float2& o);
-    constexpr ~Float2();
 
     constexpr Float2& operator=(const Float2& other);
     constexpr Float2& operator+=(const Float2& other);

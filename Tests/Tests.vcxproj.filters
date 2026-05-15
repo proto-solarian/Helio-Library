@@ -18,12 +18,18 @@
     <ClCompile Include="Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Float2Tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Float3Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Float2Tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

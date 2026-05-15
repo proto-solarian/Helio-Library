@@ -14,9 +14,6 @@ inline constexpr Float2::Float2(const Float2& o)
     : x(o.x), y(o.y)
 {}
 
-inline constexpr Float2::~Float2()
-{}
-
 /*
     Arithmetic
 */
@@ -33,10 +30,6 @@ inline constexpr Float2& Float2::operator=(const Float2& rhs)
 
 inline constexpr Float2& Float2::operator+=(const Float2& rhs)
 {
-    if (&rhs == this) {
-        return *this;
-    }
-
     x += rhs.x;
     y += rhs.y;
     return *this;
@@ -44,10 +37,6 @@ inline constexpr Float2& Float2::operator+=(const Float2& rhs)
 
 inline constexpr Float2& Float2::operator-=(const Float2& rhs)
 {
-    if (&rhs == this) {
-        return *this;
-    }
-
     x -= rhs.x;
     y -= rhs.y;
     return *this;
@@ -84,7 +73,7 @@ inline constexpr Float2 Float2::operator*(const float scalar) const
 
 inline constexpr Float2 Float2::operator/(const float scalar) const
 {
-    return this->operator*(1.0f / scalar);
+    return (*this) * (1.0f / scalar);
 }
 
 inline constexpr float Float2::Dot(const Float2& other) const
