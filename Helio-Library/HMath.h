@@ -1,9 +1,5 @@
 #pragma once
 
-#include "Float2.h"
-#include "Float3.h"
-#include "SphereCoords.h"
-
 /// <summary>
 /// é©ëRêî-ïÑçÜñ≥Çµ (0 to N_MAX)
 /// </summary>
@@ -18,7 +14,6 @@ const Z64 Z64_MAX = 9223372036854775807i64;
 const Z64 Z64_MIN = -9223372036854775808i64;
 
 const float PI = 3.1415926535f;
-
 
 const float EPSILON = 0.00000001f;
 

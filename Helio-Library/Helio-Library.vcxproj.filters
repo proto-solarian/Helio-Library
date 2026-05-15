@@ -16,12 +16,6 @@
     <Filter Include="Header Files\Math">
       <UniqueIdentifier>{f4323fd0-5ec8-4557-a643-74d1a5be6ead}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Test">
-      <UniqueIdentifier>{da9bc276-064e-429e-bbe1-964a2d843a1a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Math\Test">
-      <UniqueIdentifier>{c5086e56-0706-4c99-8fe6-e945510ffe29}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helio.h">
@@ -32,9 +26,6 @@
     </ClInclude>
     <ClInclude Include="StdUtil.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Float.h">
-      <Filter>Header Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="HMath.h">
       <Filter>Header Files\Math</Filter>
@@ -48,12 +39,6 @@
     <ClInclude Include="MathToys.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
-    <ClInclude Include="Float3Test.h">
-      <Filter>Header Files\Math\Test</Filter>
-    </ClInclude>
-    <ClInclude Include="TestUtils.h">
-      <Filter>Header Files\Test</Filter>
-    </ClInclude>
     <ClInclude Include="SphereCoords.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
@@ -66,17 +51,21 @@
     <ClInclude Include="Quaternion.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Float4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Float2.inl">
       <Filter>Header Files\Math</Filter>
     </None>
     <None Include="Float3.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="Quaternion.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="Float4.inl">
       <Filter>Header Files\Math</Filter>
     </None>
   </ItemGroup>

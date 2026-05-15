@@ -9,13 +9,12 @@ Some of the code here is for readability. C++ is a beautiful language full of ug
 Some of the code here is also for showcase and reference. What can I do, what did I do? Some of that is archived here.
 
 ## TODO
-- Tests should be out of source, especially so that some library header doesn't accidentally call them in.
-- Implement Float4 -> Make Float* declarations generic? Make Enable various levels of precision?
-- Implement Matrices
-- Tests for Quaternions
+- Add Matrices
 - Add that quick square root from Quake
 - Add Cubemap functions
 - Add Data Structures
+- Tests for Float4
+- Tests for Quaternions
 - Tests for Computational Geometry Utils: triangle logic, barycentric coords (rasterization, point-in-tri)
 - Tests for Spheremap conversion functions (from-to look dir).
 - Tests for Spherecoords implementation.

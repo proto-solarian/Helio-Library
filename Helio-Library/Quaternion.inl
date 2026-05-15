@@ -94,3 +94,16 @@ inline constexpr Quaternion Quaternion::operator/(const Quaternion& rhs) const
     float od = (a * rhs.d - b * rhs.c + c * rhs.b - d * rhs.a) / den;
     return Quaternion(oa, ob, oc, od);
 }
+
+inline constexpr bool Quaternion::operator==(const Quaternion& rhs) const
+{
+    return a == rhs.a &&
+        b == rhs.b &&
+        c == rhs.c &&
+        d == rhs.d;
+}
+
+inline constexpr bool Quaternion::operator!=(const Quaternion& rhs) const
+{
+    return !(*this == rhs);
+}

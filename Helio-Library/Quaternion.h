@@ -26,8 +26,8 @@ public:
     constexpr Quaternion operator*(const Quaternion& rhs) const;
     constexpr Quaternion operator/(const Quaternion& rhs) const;
     
-    // TODO: operator==
-    // TODO: operator!=
+    constexpr bool operator==(const Quaternion& rhs) const;
+    constexpr bool operator!=(const Quaternion& rhs) const;
     // TODO: Quaternion AngleAxis constructor
 };
 
