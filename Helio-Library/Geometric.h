@@ -42,36 +42,3 @@ inline constexpr SphereCoords FromCartesianCoords(const Float3& cartesian)
     float radius = cartesian.Magnitude();
     return SphereCoords(radius, theta, phi);
 }
-
-/// <summary>
-/// Calculates the barycentric weights for a point in a triangle using the subtriangle method.
-/// </summary>
-/// <param name="tri"></param>
-/// <param name="point"></param>
-/// <returns></returns>
-inline constexpr Float3 BarycentricWeights(const Triangle& triangle, const Float3& point)
-{
-    float area = triangle.Area();
-    float w0 = Triangle::Area(triangle.p1, triangle.p2, point) / area;
-    float w1 = Triangle::Area(triangle.p0, triangle.p2, point) / area;
-    float w2 = Triangle::Area(triangle.p1, triangle.p0, point) / area;
-    return Float3(w0, w1, w2);
-}
-
-/// <summary>
-/// Calculates the barycentric weights for a point in a triangle using the matrix method.
-/// </summary>
-/// <param name="tri"></param>
-/// <param name="point"></param>
-/// <returns></returns>
-//Float3 BarycentricWeights(Triangle tri, Float3 point)
-//{
-//    Matrix4x4 t = new Matrix4x4(
-//        new Float3(tri.p0.x - tri.p2.x, tri.p0.y - tri.p2.y, tri.p0.z - tri.p2.z, 0.0f),
-//        new Float3(tri.p1.x - tri.p2.x, tri.p1.y - tri.p2.y, tri.p1.z - tri.p2.z, 0.0f),
-//        new Float3(0.0f, 0.0f, 1.0f, 0.0f),
-//        new Float3(0.0f, 0.0f, 0.0f, 1.0f));
-//    Float3 weights = t.inverse * (point - tri.p2);
-//    weights.z = 1.0f - weights.x - weights.y;
-//    return weights;
-//}
